@@ -10,3 +10,8 @@ then run::
     > mlflow [url to this repo] -e help
 
 to get a description of the commands.
+
+## Project links
+
+- **Github Repository**: https://github.com/magdirlavim/Project-Build-an-ML-Pipeline-Starter
+- **Weights and Biases Project**: https://wandb.ai/magdirilavimiel-western-governors-university/nyc_airbnb
