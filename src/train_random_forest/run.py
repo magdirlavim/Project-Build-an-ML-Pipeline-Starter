@@ -206,10 +206,7 @@ def get_inference_pipeline(rf_config, max_tfidf_features):
     # Create random forest
     random_forest = RandomForestRegressor(**rf_config)
 
-    # Create the inference pipeline. The pipeline must have 2 steps: 
-    # 1 - a step called "preprocessor" applying the ColumnTransformer instance that we saved in the `preprocessor` variable
-    # 2 - a step called "random_forest" with the random forest instance that we just saved in the `random_forest` variable.
-    # HINT: Use the explicit Pipeline constructor so you can assign the names to the steps, do not use make_pipeline
+    # Combine preprocessing and the random forest model into one pipeline
 
     sk_pipe = Pipeline(
         steps =[
