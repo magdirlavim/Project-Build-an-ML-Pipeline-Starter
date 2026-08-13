@@ -84,10 +84,8 @@ def test_similar_neigh_distrib(data: pd.DataFrame, ref_data: pd.DataFrame, kl_th
     assert np.isfinite(kl_div) and kl_div < kl_threshold
 
 
-########################################################
-# Implement here test_row_count and test_price_range   #
-########################################################
 
+# Row count and price range validation tests
 def test_row_count(data: pd.DataFrame) -> None:
     """ Test that the dataset size is reasonable, not too small, not too large.
     Args:
